@@ -14,7 +14,7 @@ def no_comments(filename):
     return code
 def tokenlist(text):
     #keyword,idenitfier, literals, operators, seperators, comments
-    keyword = re.findall(r'def|\bin\b|for|print|range|elif|else|except|^is$|while|try', text) #re allows for a find all function that will find all words imbedded in the list.
+    keyword = re.findall(r'def|\bin\b|for|print|range|elif|else|except|\bis\b|while|try', text) #re allows for a find all function that will find all words imbedded in the list.
     unique_keyword = list(set(keyword)) #this allows for the print out to not have duplicates but one unique keyword
     print("keyword: ", unique_keyword)
 
