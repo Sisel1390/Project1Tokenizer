@@ -20,7 +20,7 @@ def tokenlist(text):
 
 
     identifier = []
-    identifier.extend(re.findall(r'greet|count', text)) # for identifiers the find all function will find any letters the user decides to put down as identifiers like x and words counting as identifiers.
+    identifier.extend(re.findall(r'greet|count|calculate_sum|num1|num2|result', text)) # for identifiers the find all function will find any letters the user decides to put down as identifiers like x and words counting as identifiers.
     identifier.extend(re.findall(r'\b[a-zA-Z]\s', text))
     u_identifier = list(set(identifier))# this allows for no duplicates
     print("identifiers: ", u_identifier)
